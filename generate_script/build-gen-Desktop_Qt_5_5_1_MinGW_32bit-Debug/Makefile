@@ -190,6 +190,8 @@ Makefile: ../gen/gen.pro C:/Qt/Qt5.5.1/5.5/mingw492_32/mkspecs/win32-g++/qmake.c
 		C:/Qt/Qt5.5.1/5.5/mingw492_32/mkspecs/features/yacc.prf \
 		C:/Qt/Qt5.5.1/5.5/mingw492_32/mkspecs/features/lex.prf \
 		../gen/gen.pro \
+		C:/Qt/Qt5.5.1/5.5/mingw492_32/lib/Qt5Sql.prl \
+		C:/Qt/Qt5.5.1/5.5/mingw492_32/lib/Qt5Network.prl \
 		C:/Qt/Qt5.5.1/5.5/mingw492_32/lib/Qt5Core.prl
 	$(QMAKE) -spec win32-g++ "CONFIG+=debug" -o Makefile ..\gen\gen.pro
 C:/Qt/Qt5.5.1/5.5/mingw492_32/mkspecs/features/spec_pre.prf:
@@ -323,6 +325,8 @@ C:/Qt/Qt5.5.1/5.5/mingw492_32/mkspecs/features/exceptions.prf:
 C:/Qt/Qt5.5.1/5.5/mingw492_32/mkspecs/features/yacc.prf:
 C:/Qt/Qt5.5.1/5.5/mingw492_32/mkspecs/features/lex.prf:
 ../gen/gen.pro:
+C:/Qt/Qt5.5.1/5.5/mingw492_32/lib/Qt5Sql.prl:
+C:/Qt/Qt5.5.1/5.5/mingw492_32/lib/Qt5Network.prl:
 C:/Qt/Qt5.5.1/5.5/mingw492_32/lib/Qt5Core.prl:
 qmake: FORCE
 	@$(QMAKE) -spec win32-g++ "CONFIG+=debug" -o Makefile ..\gen\gen.pro

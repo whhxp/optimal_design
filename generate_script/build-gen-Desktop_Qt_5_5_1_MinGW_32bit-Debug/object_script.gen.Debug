@@ -1,0 +1,13 @@
+INPUT(
+./debug\main.o
+./debug\motor.o
+./debug\generate_script.o
+./debug\stator.o
+./debug\rotor.o
+./debug\magnet.o
+./debug\coil.o
+./debug\import_csv.o
+./debug\write_setting.o
+./debug\db_manipulation.o
+./debug\executing_vbs.o
+);

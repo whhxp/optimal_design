@@ -6,20 +6,22 @@
 #include "coil.h"
 #include <QtCore>
 
+
+
 class motor
 {
 public:
     motor();
     int set_power(int);
     int read_power();
+    int     ID;
     int     power;
     int     torque;
+    double  para[80];
     stator  Stator;
     rotor   Rotor;
     magnet  Magnet;
-    coil    PhaseA;
-    coil    PhaseB;
-    coil    PhaseC;
+    coil    Coil;
 };
 
 #endif // MOTOR_H

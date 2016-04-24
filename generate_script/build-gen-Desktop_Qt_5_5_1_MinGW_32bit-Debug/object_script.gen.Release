@@ -1,0 +1,13 @@
+INPUT(
+./release\main.o
+./release\motor.o
+./release\generate_script.o
+./release\stator.o
+./release\rotor.o
+./release\magnet.o
+./release\coil.o
+./release\import_csv.o
+./release\write_setting.o
+./release\db_manipulation.o
+./release\executing_vbs.o
+);

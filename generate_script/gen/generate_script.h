@@ -2,11 +2,11 @@
 #define GENERATE_SCRIPT_H
 #include <QtCore>
 
-class generate_script : public QThread
+class generate_script
 {
 public:
-    generate_script(QObject *parent = NULL);
-    void run(); Q_DECL_OVERRIDE
+    generate_script();
+    static void run(); Q_DECL_OVERRIDE
 };
 
 #endif // GENERATE_SCRIPT_H

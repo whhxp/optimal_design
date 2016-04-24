@@ -1,39 +1,26 @@
 #include "motor.h"
 #include <QtCore>
-
-
-motor motor1;
-
-class Read_setting : public QThread
-{
-public:
-    Read_setting(QObject *parent = NULL) : QThread(parent)
-    {
-    }
-
-    void run() Q_DECL_OVERRIDE
-    {
-        //qsrand(QTime(0, 0, 0).secsTo(QTime::currentTime()));
-        QSettings M_settings("setting.txt",
-            QSettings::IniFormat);
-        M_settings.beginGroup("motor");
-        //QStringList keys = M_settings.allKeys();
-        motor1.set_power(M_settings.value("power").toInt());
-        qDebug() << M_settings.value("power");
-        qDebug() << motor1.read_power();
-        qDebug() << "From worker thread: " << currentThreadId();
-    }
-};
-
+#include "write_setting.h"
+#include "import_csv.h"
+#include "executing_vbs.h"
+#include <stdlib.h>
 //
+//命令使用方式，gen [motor ID]
 int main(int argc, char *argv[])
 {
+    int id_num;
+    if (argc != 2 || strcmp(argv[1], "--help") == 0)
+        printf("%s [motor ID]\n", argv[0]);
+    else
+    {
+        id_num = strtod(argv[1], NULL);
+        qDebug() << "ID = " << id_num;
+    }
 
-    QCoreApplication a(argc, argv);
-    qDebug() << "From main thread: " << QThread::currentThreadId();
-    Read_setting read_setting;
-    QObject::connect(&read_setting, SIGNAL(finished()), &a, SLOT(quit()));
-
-    read_setting.start();
-    return a.exec();
+    Write_setting::run(id_num);
+    executing_vbs::run(id_num);
+    import_csv::run();
+    return 0;
 }
+
+

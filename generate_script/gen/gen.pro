@@ -1,4 +1,4 @@
-QT += core
+QT += core sql network
 QT -= gui
 
 TARGET = gen
@@ -13,7 +13,11 @@ SOURCES += main.cpp \
     stator.cpp \
     rotor.cpp \
     magnet.cpp \
-    coil.cpp
+    coil.cpp \
+    import_csv.cpp \
+    write_setting.cpp \
+    db_manipulation.cpp \
+    executing_vbs.cpp
 
 HEADERS += \
     motor.h \
@@ -21,4 +25,9 @@ HEADERS += \
     stator.h \
     rotor.h \
     magnet.h \
-    coil.h
+    coil.h \
+    import_csv.h \
+    write_setting.h \
+    db_manipulation.h \
+    executing_vbs.h \
+    general_para.h
