@@ -17,9 +17,9 @@ int main(int argc, char *argv[])
         qDebug() << "ID = " << id_num;
     }
 
-    Write_setting::run(id_num);
-    executing_vbs::run(id_num);
-    import_csv::run();
+    //Write_setting::run(id_num);
+    //executing_vbs::run(id_num);
+    import_csv::run(id_num);
     return 0;
 }
 

@@ -27,7 +27,7 @@ int main(int argc, char* argv[])
     else
     {
         strcpy(filename,argv[1]);
-        qDebug() << "file = " << filename;
+        //qDebug() << "file = " << filename;
     }
 
     FILE* stream = fopen( filename, "r");
@@ -40,15 +40,15 @@ int main(int argc, char* argv[])
     {
         char* tmp = strdup(line);
         //
-        sum=strtod(getfield(tmp, 3),NULL) + sum;
-        //printf("Field 3 would be %f\n", sum);
+        sum=strtod(getfield(tmp, 2),NULL) + sum;
+        //printf("Field 2 would be %f\n", sum);
         counter++;
         // NOTE strtok clobbers tmp
         free(tmp);
     }
 
     average = sum / counter;
-    std::cout << average <<std::endl;
+    std::cout << average;
 
     return EXIT_SUCCESS;
 }

@@ -9,19 +9,33 @@ void executing_vbs::run(int model_id)
     itoa(model_id, str_id, 10);
     QString settingfile;
     settingfile+=str_id;
-    settingfile+=".ini";
+    //settingfile+=".ini";
     qDebug() << settingfile;
     QStringList args;
-    args<<QString(QDir::currentPath() + "/sample-2d-ipm-v02.vbs")<<settingfile;
+    args<<QString(QDir::currentPath() + "/sample-2d-ipm-v03.vbs")<<settingfile;
     qDebug() <<args;
     vbs_process->start (script,args);
+    if (!vbs_process->waitForFinished(300000))
+    {
+        qDebug() << "vbs finished ";
+        if (vbs_process->exitStatus() == 0)
+            qDebug() << "0, OK";
+        else
+        {
+            qDebug() <<" error";
+        }
+    }
+    else
+    {
+        qDebug() << "time out ";
+    }
+
     //QString command;
     //command+= script;
     //command+= QDir::currentPath();
     //command+= "/export.vbs";
     //system(qPrintable(command));//这个是第二种方法，不过信号传递很麻烦
-    qDebug()<<vbs_process->exitStatus();
-    if (vbs_process->exitStatus() == 0)
-        qDebug() << "vbs exit OK";
-    //return a.exec();
+    delete vbs_process;
+    vbs_process=NULL;
+    return;
 }

@@ -1,0 +1,60 @@
+$begin 'ConEngineContinueData'
+	$begin 'MeshSettings'
+		$begin 'GlobalSurfApproximation'
+			SurfDevChoice=0
+			NormalDevChoice=1
+			AspectRatioChoice=1
+			PullToTrueSurf=false
+			SetFacePreservationLevel=0
+		$end 'GlobalSurfApproximation'
+		MeshMethod='Auto'
+	$end 'MeshSettings'
+	$begin 'MeshOperations'
+		NextUniqueID=0
+		MoveBackwards=false
+		$begin 'Coils'
+			Type='LengthBased'
+			RefineInside=true
+			ID=0
+			Enabled=true
+			Objects(1513, 1696, 1555, 1978, 1535, 1837)
+			RestrictElem=false
+			NumMaxElem='1000'
+			RestrictLength=true
+			MaxLength='4mm'
+		$end 'Coils'
+		$begin 'Magnets'
+			Type='LengthBased'
+			RefineInside=true
+			ID=1
+			Enabled=true
+			Objects(2220, 1074)
+			RestrictElem=false
+			NumMaxElem='1000'
+			RestrictLength=true
+			MaxLength='3mm'
+		$end 'Magnets'
+		$begin 'rotor'
+			Type='LengthBased'
+			RefineInside=true
+			ID=2
+			Enabled=true
+			Objects(779)
+			RestrictElem=false
+			NumMaxElem='1000'
+			RestrictLength=true
+			MaxLength='4mm'
+		$end 'rotor'
+		$begin 'Length1'
+			Type='LengthBased'
+			RefineInside=true
+			ID=3
+			Enabled=true
+			Objects(6)
+			RestrictElem=false
+			NumMaxElem='1000'
+			RestrictLength=true
+			MaxLength='4mm'
+		$end 'Length1'
+	$end 'MeshOperations'
+$end 'ConEngineContinueData'

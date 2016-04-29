@@ -7,8 +7,8 @@
 class import_csv
 {
 public:
-    import_csv();
-    static void run(); Q_DECL_OVERRIDE
+    import_csv(int);
+    static void run(int); Q_DECL_OVERRIDE
 };
 
 #endif // IMPORT_CSV_H
