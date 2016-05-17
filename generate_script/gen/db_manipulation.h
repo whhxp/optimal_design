@@ -16,5 +16,6 @@ bool createConnection();
 bool closeDBConnection();
 motor read_db(double ID);
 int read_db_setting();
+bool insertdb(int, QString, QString);
 
 #endif // DB_MANIPULATION_H

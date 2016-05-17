@@ -185,11 +185,14 @@ Makefile: ../connector/connector.pro C:/Qt/Qt5.5.1/5.5/mingw492_32/mkspecs/win32
 		C:/Qt/Qt5.5.1/5.5/mingw492_32/mkspecs/features/qt.prf \
 		C:/Qt/Qt5.5.1/5.5/mingw492_32/mkspecs/features/resources.prf \
 		C:/Qt/Qt5.5.1/5.5/mingw492_32/mkspecs/features/moc.prf \
+		C:/Qt/Qt5.5.1/5.5/mingw492_32/mkspecs/features/win32/opengl.prf \
 		C:/Qt/Qt5.5.1/5.5/mingw492_32/mkspecs/features/testcase_targets.prf \
 		C:/Qt/Qt5.5.1/5.5/mingw492_32/mkspecs/features/exceptions.prf \
 		C:/Qt/Qt5.5.1/5.5/mingw492_32/mkspecs/features/yacc.prf \
 		C:/Qt/Qt5.5.1/5.5/mingw492_32/mkspecs/features/lex.prf \
 		../connector/connector.pro \
+		C:/Qt/Qt5.5.1/5.5/mingw492_32/lib/Qt5Gui.prl \
+		C:/Qt/Qt5.5.1/5.5/mingw492_32/lib/Qt5Network.prl \
 		C:/Qt/Qt5.5.1/5.5/mingw492_32/lib/Qt5Core.prl
 	$(QMAKE) -spec win32-g++ "CONFIG+=debug" -o Makefile ..\connector\connector.pro
 C:/Qt/Qt5.5.1/5.5/mingw492_32/mkspecs/features/spec_pre.prf:
@@ -318,11 +321,14 @@ C:/Qt/Qt5.5.1/5.5/mingw492_32/mkspecs/features/warn_on.prf:
 C:/Qt/Qt5.5.1/5.5/mingw492_32/mkspecs/features/qt.prf:
 C:/Qt/Qt5.5.1/5.5/mingw492_32/mkspecs/features/resources.prf:
 C:/Qt/Qt5.5.1/5.5/mingw492_32/mkspecs/features/moc.prf:
+C:/Qt/Qt5.5.1/5.5/mingw492_32/mkspecs/features/win32/opengl.prf:
 C:/Qt/Qt5.5.1/5.5/mingw492_32/mkspecs/features/testcase_targets.prf:
 C:/Qt/Qt5.5.1/5.5/mingw492_32/mkspecs/features/exceptions.prf:
 C:/Qt/Qt5.5.1/5.5/mingw492_32/mkspecs/features/yacc.prf:
 C:/Qt/Qt5.5.1/5.5/mingw492_32/mkspecs/features/lex.prf:
 ../connector/connector.pro:
+C:/Qt/Qt5.5.1/5.5/mingw492_32/lib/Qt5Gui.prl:
+C:/Qt/Qt5.5.1/5.5/mingw492_32/lib/Qt5Network.prl:
 C:/Qt/Qt5.5.1/5.5/mingw492_32/lib/Qt5Core.prl:
 qmake: FORCE
 	@$(QMAKE) -spec win32-g++ "CONFIG+=debug" -o Makefile ..\connector\connector.pro

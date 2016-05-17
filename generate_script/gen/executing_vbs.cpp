@@ -12,7 +12,7 @@ void executing_vbs::run(int model_id)
     //settingfile+=".ini";
     qDebug() << settingfile;
     QStringList args;
-    args<<QString(QDir::currentPath() + "/sample-2d-ipm-v03.vbs")<<settingfile;
+    args<<QString(QDir::currentPath() + "/script.vbs")<<settingfile;
     qDebug() <<args;
     vbs_process->start (script,args);
     if (!vbs_process->waitForFinished(300000))
@@ -29,7 +29,8 @@ void executing_vbs::run(int model_id)
     {
         qDebug() << "time out ";
     }
-
+    QString output(vbs_process->readAllStandardOutput());
+    qDebug() << output;
     //QString command;
     //command+= script;
     //command+= QDir::currentPath();

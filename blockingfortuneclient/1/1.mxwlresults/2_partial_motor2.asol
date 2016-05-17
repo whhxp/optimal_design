@@ -1,0 +1,259 @@
+$begin '$base_index$'
+  $begin 'properties'
+    all_levels=000000000000
+    time(year=000000002016, month=000000000005, day=000000000016, hour=000000000011, min=000000000022, sec=000000000030)
+    version=000000000000
+  $end 'properties'
+  $begin '$base_index$'
+    $index$(pos=000000011799, lin=000000000239, lvl=000000000000)
+  $end '$base_index$'
+$end '$base_index$'
+$begin 'SolutionBlock1'
+	ProductName=''
+	CircuitName='2_partial_motor2'
+	VersionID=48
+	PostProcess=false
+	LossLess=true
+	NextUniqueID=198
+	MoveBackwards=false
+	$begin 'VariationIDs'
+		Map(V='Imax=\'250A\' Omega=\'72000\' Omega_rad=\'1256.63706143592\' PolePairs=\'4\' Poles=\'8\' Speed_rpm=\'3000\' Thet=\'0.349065850398866\' Thet_deg=\'20\'', ID=55)
+	$end 'VariationIDs'
+	$begin 'LinkedDataList'
+	$end 'LinkedDataList'
+	$begin 'InitialMeshes'
+		M(VID=55, Ver=48, Dir='DV55_V48.imesh/')
+	$end 'InitialMeshes'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=55, Ver=48, Dir='DV55_MI0_V48.sd/')
+		$end 'SubData'
+	$end 'MI'
+$end 'SolutionBlock1'
+$begin 'BlockMapName'
+	FileHeader='SolutionBlock1'
+	'SolutionKey(SimSetup=53, Instance=\'SetupDefinition\', Solution=-1, VersionID=0)'='SolutionBlock2'
+	'SolutionKey(SimSetup=53, Instance=\'SolutionDefinition\', Solution=54, VersionID=0)'='SolutionBlock3'
+$end 'BlockMapName'
+$begin 'SolutionBlock2'
+	SimSetupID=53
+	SimSetupName='Setup1'
+	VersionID=0
+	SolveSetupID=0
+	$begin 'CurrMeshes'
+		IDDblMap(72, 0, 75, 0.00025, 77, 0.0005, 79, 0.00075, 81, 0.001, 83, 0.00125, 85, 0.0015, 87, 0.00175, 89, 0.002, 91, 0.00225, 93, 0.002500000000000001, 95, 0.002750000000000001, 97, 0.003000000000000001, 99, 0.003250000000000001, 101, 0.003500000000000001, 103, 0.003750000000000002, 105, 0.004000000000000002, 107, 0.004250000000000002, 109, 0.004500000000000002, 111, 0.004750000000000003, 113, 0.005000000000000003, 115, 0.005250000000000003, 117, 0.005500000000000003, 119, 0.005750000000000003, 121, 0.006000000000000004, 123, 0.006250000000000004, 125, 0.006500000000000004, 127, 0.006750000000000004, 129, 0.007000000000000005, 131, 0.007250000000000005, 133, 0.007500000000000005, 135, 0.007750000000000005, 137, 0.008000000000000005, 139, 0.008250000000000006, 141, 0.008500000000000006, 143, 0.008750000000000006, 145, 0.009000000000000006, 147, 0.009250000000000007, 149, 0.009500000000000007, 151, 0.009750000000000007, 153, 0.01000000000000001, 155, 0.01025000000000001, 157, 0.01050000000000001, 159, 0.01075000000000001, 161, 0.01100000000000001, 163, 0.01125000000000001, 165, 0.01150000000000001, 167, 0.01175000000000001, 169, 0.01200000000000001, 171, 0.01225000000000001, 173, 0.01250000000000001, 175, 0.01275000000000001, 177, 0.01300000000000001, 179, 0.01325000000000001, 181, 0.01350000000000001, 183, 0.01375000000000001, 185, 0.01400000000000001, 187, 0.01425000000000001, 189, 0.01450000000000001, 191, 0.01475000000000001, 193, 0.015)
+		$begin 'DataMap'
+			VID=55
+			Ver=0
+			M(DblID=72, Dir='DV55_S53_V0.cmesh72/')
+			M(DblID=75, Dir='DV55_S53_V0.cmesh75/')
+			M(DblID=77, Dir='DV55_S53_V0.cmesh77/')
+			M(DblID=79, Dir='DV55_S53_V0.cmesh79/')
+			M(DblID=81, Dir='DV55_S53_V0.cmesh81/')
+			M(DblID=83, Dir='DV55_S53_V0.cmesh83/')
+			M(DblID=85, Dir='DV55_S53_V0.cmesh85/')
+			M(DblID=87, Dir='DV55_S53_V0.cmesh87/')
+			M(DblID=89, Dir='DV55_S53_V0.cmesh89/')
+			M(DblID=91, Dir='DV55_S53_V0.cmesh91/')
+			M(DblID=93, Dir='DV55_S53_V0.cmesh93/')
+			M(DblID=95, Dir='DV55_S53_V0.cmesh95/')
+			M(DblID=97, Dir='DV55_S53_V0.cmesh97/')
+			M(DblID=99, Dir='DV55_S53_V0.cmesh99/')
+			M(DblID=101, Dir='DV55_S53_V0.cmesh101/')
+			M(DblID=103, Dir='DV55_S53_V0.cmesh103/')
+			M(DblID=105, Dir='DV55_S53_V0.cmesh105/')
+			M(DblID=107, Dir='DV55_S53_V0.cmesh107/')
+			M(DblID=109, Dir='DV55_S53_V0.cmesh109/')
+			M(DblID=111, Dir='DV55_S53_V0.cmesh111/')
+			M(DblID=113, Dir='DV55_S53_V0.cmesh113/')
+			M(DblID=115, Dir='DV55_S53_V0.cmesh115/')
+			M(DblID=117, Dir='DV55_S53_V0.cmesh117/')
+			M(DblID=119, Dir='DV55_S53_V0.cmesh119/')
+			M(DblID=121, Dir='DV55_S53_V0.cmesh121/')
+			M(DblID=123, Dir='DV55_S53_V0.cmesh123/')
+			M(DblID=125, Dir='DV55_S53_V0.cmesh125/')
+			M(DblID=127, Dir='DV55_S53_V0.cmesh127/')
+			M(DblID=129, Dir='DV55_S53_V0.cmesh129/')
+			M(DblID=131, Dir='DV55_S53_V0.cmesh131/')
+			M(DblID=133, Dir='DV55_S53_V0.cmesh133/')
+			M(DblID=135, Dir='DV55_S53_V0.cmesh135/')
+			M(DblID=137, Dir='DV55_S53_V0.cmesh137/')
+			M(DblID=139, Dir='DV55_S53_V0.cmesh139/')
+			M(DblID=141, Dir='DV55_S53_V0.cmesh141/')
+			M(DblID=143, Dir='DV55_S53_V0.cmesh143/')
+			M(DblID=145, Dir='DV55_S53_V0.cmesh145/')
+			M(DblID=147, Dir='DV55_S53_V0.cmesh147/')
+			M(DblID=149, Dir='DV55_S53_V0.cmesh149/')
+			M(DblID=151, Dir='DV55_S53_V0.cmesh151/')
+			M(DblID=153, Dir='DV55_S53_V0.cmesh153/')
+			M(DblID=155, Dir='DV55_S53_V0.cmesh155/')
+			M(DblID=157, Dir='DV55_S53_V0.cmesh157/')
+			M(DblID=159, Dir='DV55_S53_V0.cmesh159/')
+			M(DblID=161, Dir='DV55_S53_V0.cmesh161/')
+			M(DblID=163, Dir='DV55_S53_V0.cmesh163/')
+			M(DblID=165, Dir='DV55_S53_V0.cmesh165/')
+			M(DblID=167, Dir='DV55_S53_V0.cmesh167/')
+			M(DblID=169, Dir='DV55_S53_V0.cmesh169/')
+			M(DblID=171, Dir='DV55_S53_V0.cmesh171/')
+			M(DblID=173, Dir='DV55_S53_V0.cmesh173/')
+			M(DblID=175, Dir='DV55_S53_V0.cmesh175/')
+			M(DblID=177, Dir='DV55_S53_V0.cmesh177/')
+			M(DblID=179, Dir='DV55_S53_V0.cmesh179/')
+			M(DblID=181, Dir='DV55_S53_V0.cmesh181/')
+			M(DblID=183, Dir='DV55_S53_V0.cmesh183/')
+			M(DblID=185, Dir='DV55_S53_V0.cmesh185/')
+			M(DblID=187, Dir='DV55_S53_V0.cmesh187/')
+			M(DblID=189, Dir='DV55_S53_V0.cmesh189/')
+			M(DblID=191, Dir='DV55_S53_V0.cmesh191/')
+			M(DblID=193, Dir='DV55_S53_V0.cmesh193/')
+		$end 'DataMap'
+	$end 'CurrMeshes'
+	$begin 'StartingMesh'
+		IDDblMap(66, -1)
+		$begin 'DataMap'
+			VID=55
+			Ver=0
+			SM(DblID=66, Dir='DV55_S53_V0.smesh66/')
+		$end 'DataMap'
+	$end 'StartingMesh'
+	$begin 'MeshOps'
+		OPS(VID=55, Ver=0, ID=0, ID=1, ID=2, ID=3)
+	$end 'MeshOps'
+	$begin 'Profiles'
+		P(VID=55, Ver=0, File='DV55_S53_V0.profile')
+	$end 'Profiles'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=55, Ver=0, Dir='DV55_S53_MI0_V0.sd/')
+		$end 'SubData'
+	$end 'MI'
+	$begin 'MeshGeomInfo'
+		MGI(VID=55, Ver=0, Dir='DV55_S53_V0_MGI/')
+	$end 'MeshGeomInfo'
+	$begin 'AMOsetup'
+		AMO(VID=55, Ver=0, File='DV55_S53_V0.amo')
+	$end 'AMOsetup'
+$end 'SolutionBlock2'
+$begin 'SolutionBlock3'
+	SolutionName='Transient'
+	SolutionID=54
+	V=0
+	$begin 'States'
+		F(VID=55, Ver=0)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies()
+		SolutionType=1
+		CenterFreq=0
+	$end 'Definition'
+	$begin 'Fields'
+		IDDblMap(73, 0, 76, 0.00025, 78, 0.0005, 80, 0.00075, 82, 0.001, 84, 0.00125, 86, 0.0015, 88, 0.00175, 90, 0.002, 92, 0.00225, 94, 0.002500000000000001, 96, 0.002750000000000001, 98, 0.003000000000000001, 100, 0.003250000000000001, 102, 0.003500000000000001, 104, 0.003750000000000002, 106, 0.004000000000000002, 108, 0.004250000000000002, 110, 0.004500000000000002, 112, 0.004750000000000003, 114, 0.005000000000000003, 116, 0.005250000000000003, 118, 0.005500000000000003, 120, 0.005750000000000003, 122, 0.006000000000000004, 124, 0.006250000000000004, 126, 0.006500000000000004, 128, 0.006750000000000004, 130, 0.007000000000000005, 132, 0.007250000000000005, 134, 0.007500000000000005, 136, 0.007750000000000005, 138, 0.008000000000000005, 140, 0.008250000000000006, 142, 0.008500000000000006, 144, 0.008750000000000006, 146, 0.009000000000000006, 148, 0.009250000000000007, 150, 0.009500000000000007, 152, 0.009750000000000007, 154, 0.01000000000000001, 156, 0.01025000000000001, 158, 0.01050000000000001, 160, 0.01075000000000001, 162, 0.01100000000000001, 164, 0.01125000000000001, 166, 0.01150000000000001, 168, 0.01175000000000001, 170, 0.01200000000000001, 172, 0.01225000000000001, 174, 0.01250000000000001, 176, 0.01275000000000001, 178, 0.01300000000000001, 180, 0.01325000000000001, 182, 0.01350000000000001, 184, 0.01375000000000001, 186, 0.01400000000000001, 188, 0.01425000000000001, 190, 0.01450000000000001, 192, 0.01475000000000001, 194, 0.015)
+		$begin 'DataMap'
+			VID=55
+			Ver=0
+			Field(DblID=73, Dir='DV55_SOL54_V0.Field73/')
+			Field(DblID=76, Dir='DV55_SOL54_V0.Field76/')
+			Field(DblID=78, Dir='DV55_SOL54_V0.Field78/')
+			Field(DblID=80, Dir='DV55_SOL54_V0.Field80/')
+			Field(DblID=82, Dir='DV55_SOL54_V0.Field82/')
+			Field(DblID=84, Dir='DV55_SOL54_V0.Field84/')
+			Field(DblID=86, Dir='DV55_SOL54_V0.Field86/')
+			Field(DblID=88, Dir='DV55_SOL54_V0.Field88/')
+			Field(DblID=90, Dir='DV55_SOL54_V0.Field90/')
+			Field(DblID=92, Dir='DV55_SOL54_V0.Field92/')
+			Field(DblID=94, Dir='DV55_SOL54_V0.Field94/')
+			Field(DblID=96, Dir='DV55_SOL54_V0.Field96/')
+			Field(DblID=98, Dir='DV55_SOL54_V0.Field98/')
+			Field(DblID=100, Dir='DV55_SOL54_V0.Field100/')
+			Field(DblID=102, Dir='DV55_SOL54_V0.Field102/')
+			Field(DblID=104, Dir='DV55_SOL54_V0.Field104/')
+			Field(DblID=106, Dir='DV55_SOL54_V0.Field106/')
+			Field(DblID=108, Dir='DV55_SOL54_V0.Field108/')
+			Field(DblID=110, Dir='DV55_SOL54_V0.Field110/')
+			Field(DblID=112, Dir='DV55_SOL54_V0.Field112/')
+			Field(DblID=114, Dir='DV55_SOL54_V0.Field114/')
+			Field(DblID=116, Dir='DV55_SOL54_V0.Field116/')
+			Field(DblID=118, Dir='DV55_SOL54_V0.Field118/')
+			Field(DblID=120, Dir='DV55_SOL54_V0.Field120/')
+			Field(DblID=122, Dir='DV55_SOL54_V0.Field122/')
+			Field(DblID=124, Dir='DV55_SOL54_V0.Field124/')
+			Field(DblID=126, Dir='DV55_SOL54_V0.Field126/')
+			Field(DblID=128, Dir='DV55_SOL54_V0.Field128/')
+			Field(DblID=130, Dir='DV55_SOL54_V0.Field130/')
+			Field(DblID=132, Dir='DV55_SOL54_V0.Field132/')
+			Field(DblID=134, Dir='DV55_SOL54_V0.Field134/')
+			Field(DblID=136, Dir='DV55_SOL54_V0.Field136/')
+			Field(DblID=138, Dir='DV55_SOL54_V0.Field138/')
+			Field(DblID=140, Dir='DV55_SOL54_V0.Field140/')
+			Field(DblID=142, Dir='DV55_SOL54_V0.Field142/')
+			Field(DblID=144, Dir='DV55_SOL54_V0.Field144/')
+			Field(DblID=146, Dir='DV55_SOL54_V0.Field146/')
+			Field(DblID=148, Dir='DV55_SOL54_V0.Field148/')
+			Field(DblID=150, Dir='DV55_SOL54_V0.Field150/')
+			Field(DblID=152, Dir='DV55_SOL54_V0.Field152/')
+			Field(DblID=154, Dir='DV55_SOL54_V0.Field154/')
+			Field(DblID=156, Dir='DV55_SOL54_V0.Field156/')
+			Field(DblID=158, Dir='DV55_SOL54_V0.Field158/')
+			Field(DblID=160, Dir='DV55_SOL54_V0.Field160/')
+			Field(DblID=162, Dir='DV55_SOL54_V0.Field162/')
+			Field(DblID=164, Dir='DV55_SOL54_V0.Field164/')
+			Field(DblID=166, Dir='DV55_SOL54_V0.Field166/')
+			Field(DblID=168, Dir='DV55_SOL54_V0.Field168/')
+			Field(DblID=170, Dir='DV55_SOL54_V0.Field170/')
+			Field(DblID=172, Dir='DV55_SOL54_V0.Field172/')
+			Field(DblID=174, Dir='DV55_SOL54_V0.Field174/')
+			Field(DblID=176, Dir='DV55_SOL54_V0.Field176/')
+			Field(DblID=178, Dir='DV55_SOL54_V0.Field178/')
+			Field(DblID=180, Dir='DV55_SOL54_V0.Field180/')
+			Field(DblID=182, Dir='DV55_SOL54_V0.Field182/')
+			Field(DblID=184, Dir='DV55_SOL54_V0.Field184/')
+			Field(DblID=186, Dir='DV55_SOL54_V0.Field186/')
+			Field(DblID=188, Dir='DV55_SOL54_V0.Field188/')
+			Field(DblID=190, Dir='DV55_SOL54_V0.Field190/')
+			Field(DblID=192, Dir='DV55_SOL54_V0.Field192/')
+			Field(DblID=194, Dir='DV55_SOL54_V0.Field194/')
+		$end 'DataMap'
+	$end 'Fields'
+	$begin 'PD'
+		NextUniqueID=7
+		MoveBackwards=false
+		$begin 'SubData'
+			ID=0
+			Ver=0
+			PD(VID=55, Ver=0, File='DV55_SOL54_PD0_V0.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=1
+			Ver=0
+			PD(VID=55, Ver=0, File='DV55_SOL54_PD1_V0.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=2
+			Ver=0
+			PD(VID=55, Ver=0, File='DV55_SOL54_PD2_V0.sd')
+		$end 'SubData'
+	$end 'PD'
+	$begin 'NFSP'
+		$begin 'SubData'
+			ID=10
+			NFSP(VID=55, Ver=0, File='DV55_SOL54_NFSP10_V0.sd')
+		$end 'SubData'
+	$end 'NFSP'
+	$begin 'EngineSolutionData'
+		Data(VID=55, Ver=0, Dir='DV55_SOL54_V0.Data/')
+	$end 'EngineSolutionData'
+$end 'SolutionBlock3'
+$begin '$index$'
+	$begin '$index$'
+		BlockMapName(pos=1015, lin=24, lvl=0)
+		SolutionBlock3(pos=6293, lin=129, lvl=0)
+		SolutionBlock2(pos=1291, lin=29, lvl=0)
+		SolutionBlock1(pos=370, lin=1, lvl=0)
+		$base_index$(pos=0, lin=1, lvl=0)
+		$index$(pos=11799, lin=239, lvl=0)
+	$end '$index$'
+$end '$index$'
+                                                                                                                                                                                                                                                                                                                                                  

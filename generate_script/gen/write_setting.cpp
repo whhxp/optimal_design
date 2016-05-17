@@ -7,7 +7,7 @@ Write_setting::Write_setting()
 
 }
 
-void Write_setting::run(double ID)
+void Write_setting::run(int ID)
 {
     createConnection();
     motor motor1 = read_db(ID);

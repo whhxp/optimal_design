@@ -7,6 +7,6 @@ class Write_setting
 public:
     Write_setting();
 
-    static void run(double ID);
+    static void run(int ID);
 };
 #endif // WRITE_SETTING_H

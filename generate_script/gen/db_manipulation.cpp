@@ -3,6 +3,44 @@
 
 QSqlDatabase db = QSqlDatabase::addDatabase("QMYSQL");
 
+bool insertdb(int id, QString torque,QString coreloss)
+{
+    if (!createConnection())
+    {
+        qDebug() << "upload data Not connected!";
+        return 0;
+    }
+    else
+        qDebug() << "upload data Connected!";
+    QSqlQuery query;
+    //QString table=" motor_performance (ID, torque, coreloss, rpm, inducedvoltage, fluxlinkage, compute_time)";
+    query.prepare(QLatin1String("INSERT INTO motor_performance (ID, torque, coreloss, rpm, inducedvoltage, fluxlinkage, compute_time) "
+                      "VALUES (?, ?, ?, ?, ?, ?, ?)"));
+    query.bindValue(0, id);
+    query.bindValue(1, torque.toDouble());
+    query.bindValue(2, coreloss.toDouble());
+    query.bindValue(3, 1);
+    query.bindValue(4, 1);
+        query.bindValue(5, 1);
+        query.bindValue(6, 1);
+    query.exec();
+    qDebug() <<QSqlError();
+    //QSqlDatabase::database().commit();
+    query.clear();
+    query.exec("select * from motor_performance;");
+    while (query.next())
+    {
+        qDebug() << query.value(0).toString();
+        qDebug() << query.value(1).toString();
+        qDebug() << query.value(2).toString();
+        qDebug() << query.value(3).toString();
+        qDebug() << query.value(4).toString();
+        qDebug() << query.value(5).toString();
+        qDebug() << query.value(6).toString();
+    }
+    closeDBConnection();
+    return 1;
+}
 
 bool createConnection()
 {
@@ -139,5 +177,6 @@ motor read_db(double ID)
         // qDebug() << "diagap:" << motor1.Stator.DiaGap;
         query.clear();
     }
+    closeDBConnection();
     return motor2;
 }

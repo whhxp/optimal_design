@@ -1,0 +1,21 @@
+SimValueCacheVersionID=1
+$begin 'SimValueInfos'
+	NextUniqueID=2
+	MoveBackwards=false
+	$begin 'SimValue'
+		ID=0
+		$begin 'SimValueParams'
+			QuantityName='Moving1.Torque'
+			ValueState(125, 19, 1, 1)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=1
+		$begin 'SimValueParams'
+			QuantityName='CoreLoss'
+			ValueState(59, 8, 0, 1)
+		$end 'SimValueParams'
+	$end 'SimValue'
+$end 'SimValueInfos'
+$begin 'SimValueCache'
+$end 'SimValueCache'

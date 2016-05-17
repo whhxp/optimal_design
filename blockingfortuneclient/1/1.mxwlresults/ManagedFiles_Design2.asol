@@ -1,0 +1,4 @@
+IsBigEndian false
+$begin 'ManagedFiles'
+	svcache[3: 'HDR658E6940146336895015.tmp', 'min658E6940146336895016.tmp', 'min658E6940146336895017.tmp']
+$end 'ManagedFiles'
